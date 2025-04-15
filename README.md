@@ -13,3 +13,4 @@ LeetCode problems fuss
 | [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/) | `Array` `Dynamic Programming` `Sliding Window` | Medium |
 | [443. String Compression](https://leetcode.com/problems/string-compression/) | `Two Pointers` `String` | Medium |
 | [281. Zigzag Iterator](https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0281.Zigzag%20Iterator/README_EN.md)| `Design` `Queue` `Array` `Iterator`| Medium |
+| [161. One Edit Distance](https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0161.One%20Edit%20Distance/README_EN.md) | `Two Pointers` `String` | Medium |
