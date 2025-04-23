@@ -4,6 +4,7 @@ LeetCode problems fuss
 
 | Problem | Topics | Difficulty |
 | ------- | ------ | ---------- |
+| [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | `String` `Stack` | Easy |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | `Array` `Hash Table` `String` `Sorting` | Medium |
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | `Two Pointers` `String` | Easy |
 | [161. One Edit Distance](https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0161.One%20Edit%20Distance/README_EN.md) | `Two Pointers` `String` | Medium |
