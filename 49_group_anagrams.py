@@ -9,8 +9,38 @@ class Solution:
             sorted_word = ''.join(sorted(word))
             anagram_map[sorted_word].append(word)
         return list(anagram_map.values())
- 
     
+
+class SolutionMedium:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        anagrams = []
+        strs_w = strs.copy()
+
+        word_i = 0
+        while word_i < len(strs_w):
+            word_anagrams = [strs_w[word_i]]
+            oth_word_i = word_i + 1
+            while oth_word_i < len(strs_w):
+                if len(strs_w[word_i]) != len(strs_w[oth_word_i]):
+                    oth_word_i += 1
+                    continue
+                else:
+                    word = sorted(strs_w[word_i])
+                    oth_word = sorted(strs_w[oth_word_i])
+                    if word == oth_word:
+                        word_anagrams.append(strs_w[oth_word_i])
+                        strs_w.pop(oth_word_i)
+                    else:
+                        oth_word_i += 1
+            
+            word_anagrams.sort()
+            if word_anagrams not in anagrams:
+                anagrams.append(word_anagrams)
+                strs_w.pop(word_i)
+        
+        return anagrams
+
+
 class SolutionSlow:
     def getLettersDict(self, word: str) -> dict:
         letters = {}
@@ -23,7 +53,7 @@ class SolutionSlow:
                 letters[letter] += 1
         return letters
     
-    def groupAnagramsMy(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagrams = []
         
         strs_w = strs.copy()
@@ -74,24 +104,24 @@ if __name__ == '__main__':
 
     strs = ["eat","tea","tan","ate","nat","bat"]
     print(solution.groupAnagrams(strs)) # [["bat"],["nat","tan"],["ate","eat","tea"]]
-    # assert solution.groupAnagrams(strs) == [['ate', 'eat', 'tea'], ['nat', 'tan'], ['bat']]
+    # assert sorted(solution.groupAnagrams(strs)) == sorted([["bat"],["nat","tan"],["ate","eat","tea"]])
 
     strs = [""]
     print(solution.groupAnagrams(strs)) # [[""]]
-    # assert solution.groupAnagrams(strs) == [[""]]
+    # assert sorted(solution.groupAnagrams(strs)) == sorted([[""]])
 
     strs = ["a"]
     print(solution.groupAnagrams(strs)) # [["a"]]
-    # assert solution.groupAnagrams(strs) == [["a"]]
+    # assert sorted(solution.groupAnagrams(strs)) == sorted([["a"]])
 
     strs = ["","b"]
     print(solution.groupAnagrams(strs)) # [["b"],[""]]
-    # assert solution.groupAnagrams(strs) == [[''], ['b']]
+    # assert sorted(solution.groupAnagrams(strs)) == sorted([[''], ['b']])
 
     strs = ["",""]
     print(solution.groupAnagrams(strs)) # [["",""]]
-    # assert solution.groupAnagrams(strs) == [["",""]]
+    # assert sorted(solution.groupAnagrams(strs)) == sorted([["",""]])
 
     strs = ["ac","c"]
     print(solution.groupAnagrams(strs)) # [["c"],["ac"]]
-    # assert solution.groupAnagrams(strs) == [['ac'], ['c']]
+    # assert sorted(solution.groupAnagrams(strs)) == sorted([['ac'], ['c']])
