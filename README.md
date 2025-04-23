@@ -7,6 +7,7 @@ LeetCode problems fuss
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | `String` `Stack` | Easy |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | `Array` `Hash Table` `String` `Sorting` | Medium |
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | `Two Pointers` `String` | Easy |
+| [146. LRU Cache](https://leetcode.com/problems/lru-cache/) | `Hash Table` `Linked List` `Design` `Doubly-Linked List` | Medium |
 | [161. One Edit Distance](https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0161.One%20Edit%20Distance/README_EN.md) | `Two Pointers` `String` | Medium |
 | [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | `Linked List` `Recursion` | Easy |
 | [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) | `Array` | Easy |
