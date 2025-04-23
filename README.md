@@ -15,3 +15,4 @@ LeetCode problems fuss
 | [281. Zigzag Iterator](https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0281.Zigzag%20Iterator/README_EN.md)| `Design` `Queue` `Array` `Iterator`| Medium |
 | [161. One Edit Distance](https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0161.One%20Edit%20Distance/README_EN.md) | `Two Pointers` `String` | Medium |
 | [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | `Array` `Hash Table` `Prefix Sum` | Medium |
+| [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | `Array` `Hash Table` `String` `Sorting` | Medium |
