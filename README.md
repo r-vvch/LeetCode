@@ -5,6 +5,7 @@ LeetCode problems fuss
 | Problem | Topics | Difficulty |
 | ------- | ------ | ---------- |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | `String` `Stack` | Easy |
+| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | `String` `Dynamic Programming` `Backtracking` | Medium |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | `Array` `Hash Table` `String` `Sorting` | Medium |
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | `Two Pointers` `String` | Easy |
 | [146. LRU Cache](https://leetcode.com/problems/lru-cache/) | `Hash Table` `Linked List` `Design` `Doubly-Linked List` | Medium |
