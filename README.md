@@ -17,6 +17,7 @@ LeetCode problems fuss
 | [356. Line Reflection](https://github.com/doocs/leetcode/blob/main/solution/0300-0399/0356.Line%20Reflection/README_EN.md) | `Array` `Hash Table` `Math` | Medium |
 | [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | `Array` `Hash Table` `Math` `Design` `Randomized` | Medium |
 | [443. String Compression](https://leetcode.com/problems/string-compression/) | `Two Pointers` `String` | Medium |
+| [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | `Array` `Hash Table`| Easy |
 | [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | `Array` `Hash Table` `Prefix Sum` | Medium |
 | [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/) | `Design` `Queue` `Data Stream` | Easy |
 | [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | `Array` `Dynamic Programming` `Sliding Window` | Medium |
