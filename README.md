@@ -4,6 +4,7 @@ LeetCode problems fuss
 
 | Problem | Topics | Difficulty |
 | ------- | ------ | ---------- |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | `Array` `Hash Table` | Easy |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | `String` `Stack` | Easy |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | `String` `Dynamic Programming` `Backtracking` | Medium |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | `Array` `Hash Table` `String` `Sorting` | Medium |
