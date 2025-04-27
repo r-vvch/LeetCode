@@ -7,6 +7,7 @@ LeetCode problems fuss
 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | `Array` `Hash Table` | Easy |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | `String` `Stack` | Easy |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | `String` `Dynamic Programming` `Backtracking` | Medium |
+| [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | `Array` `Math` `Matrix` | Medium |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | `Array` `Hash Table` `String` `Sorting` | Medium |
 | [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | `Tree` `Depth-First Search` `Breadth-First Search` `Binary Tree` | Easy |
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | `Two Pointers` `String` | Easy |
