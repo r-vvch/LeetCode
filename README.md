@@ -13,6 +13,7 @@ LeetCode problems fuss
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | `Two Pointers` `String` | Easy |
 | [146. LRU Cache](https://leetcode.com/problems/lru-cache/) | `Hash Table` `Linked List` `Design` `Doubly-Linked List` | Medium |
 | [161. One Edit Distance](https://github.com/doocs/leetcode/blob/main/solution/0100-0199/0161.One%20Edit%20Distance/README_EN.md) | `Two Pointers` `String` | Medium |
+| [200. Number of Islands](https://leetcode.com/problems/number-of-islands) | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` | Medium |
 | [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | `Linked List` `Recursion` | Easy |
 | [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) | `Array` | Easy |
 | [281. Zigzag Iterator](https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0281.Zigzag%20Iterator/README_EN.md)| `Design` `Queue` `Array` `Iterator`| Medium |
