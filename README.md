@@ -25,4 +25,5 @@ LeetCode problems fuss
 | [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | `Array` `Hash Table` `Prefix Sum` | Medium |
 | [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/) | `Hash Table` `Two Pointers` `String` `Sliding Window` | Medium |
 | [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/) | `Design` `Queue` `Data Stream` | Easy |
+| [1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/) | `String` | Easy |
 | [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | `Array` `Dynamic Programming` `Sliding Window` | Medium |
