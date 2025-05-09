@@ -5,6 +5,7 @@ LeetCode fuss
 | Problem | Solution | Topics | Difficulty |
 | ------- | :------: | ------ | ---------- |
 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/1_two_sum.py) | `Array` `Hash Table` | Easy |
+| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/3_longest_substring_without_repeating_characters.py) | `Hash Table` `String` `Sliding Window` | Medium |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/20_valid_parentheses.py) | `String` `Stack` | Easy |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/22_generate_parentheses.py) | `String` `Dynamic Programming` `Backtracking` | Medium |
 | [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [😤](https://github.com/r-vvch/LeetCode/blob/main/solutions/23_merge_k_sorted_lists.py) | `Linked List` `Divide and Conquer` `Heap (Priority Queue)` `Merge Sort` | Hard |
@@ -22,7 +23,7 @@ LeetCode fuss
 | [281. Zigzag Iterator](https://github.com/doocs/leetcode/blob/main/solutions/solution/0200-0299/0281.Zigzag%20Iterator/README_EN.md)| [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/281_zigzag_iterator.py) | `Design` `Queue` `Array` `Iterator`| Medium |
 | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/283_move_zeroes.py) | `Array` `Two Pointers` | Easy |
 | [356. Line Reflection](https://github.com/doocs/leetcode/blob/main/solutions/solution/0300-0399/0356.Line%20Reflection/README_EN.md) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/356_line_reflection.py) | `Array` `Hash Table` `Math` | Medium |
-| [362. Design Hit Counter]() | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/362_design_hit_counter.py) | `Design` `Queue` `Array` `Binary Search` | Medium |
+| [362. Design Hit Counter](https://github.com/doocs/leetcode/blob/main/solution/0300-0399/0362.Design%20Hit%20Counter/README_EN.md) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/362_design_hit_counter.py) | `Design` `Queue` `Array` `Binary Search` | Medium |
 | [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/380_insert_delete_getrandom_o1.py) | `Array` `Hash Table` `Math` `Design` `Randomized` | Medium |
 | [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/438_find_all_anagrams_in_a_string.py) | `Hash Table` `String` `Sliding Window` | Medium |
 | [443. String Compression](https://leetcode.com/problems/string-compression/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/443_string_compression.py) | `Two Pointers` `String` | Medium |
