@@ -12,6 +12,7 @@ LeetCode fuss
 | [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/48_rotate_image.py) | `Array` `Math` `Matrix` | Medium |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/49_group_anagrams.py) | `Array` `Hash Table` `String` `Sorting` | Medium |
 | [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/56_merge_intervals.py) | `Array` `Sorting` | Medium |
+| [98_validate_binary_search_tree.py](https://leetcode.com/problems/validate-binary-search-tree/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/98_validate_binary_search_tree.py) | `Tree` `Depth-First Search` `Binary Search Tree` `Binary Tree` | Medium |
 | [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/101_symmetric_tree.py) | `Tree` `Depth-First Search` `Breadth-First Search` `Binary Tree` | Easy |
 | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/125_valid_palindrome.py) | `Two Pointers` `String` | Easy |
 | [146. LRU Cache](https://leetcode.com/problems/lru-cache/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/146_lru_cache.py) | `Hash Table` `Linked List` `Design` `Doubly-Linked List` | Medium |
