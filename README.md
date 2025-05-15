@@ -5,6 +5,7 @@ LeetCode fuss
 | Problem | Solution | Topics | Difficulty |
 | ------- | :------: | ------ | ---------- |
 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/1_two_sum.py) | `Array` `Hash Table` | Easy |
+| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/2_add_two_numbers.py) | `Linked List` `Math` `Recursion` | Medium |
 | [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/3_longest_substring_without_repeating_characters.py) | `Hash Table` `String` `Sliding Window` | Medium |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/20_valid_parentheses.py) | `String` `Stack` | Easy |
 | [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/22_generate_parentheses.py) | `String` `Dynamic Programming` `Backtracking` | Medium |
