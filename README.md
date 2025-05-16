@@ -1,6 +1,6 @@
 # LeetCode
 
-LeetCode fuss
+LeetCode fuss [👀](https://leetcode.com/u/roman_vvch/)
 
 | Problem | Solution | Topics | Difficulty |
 | ------- | :------: | ------ | ---------- |
@@ -25,6 +25,7 @@ LeetCode fuss
 | [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/206_reverse_linked_list.py) | `Linked List` `Recursion` | Easy |
 | [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/228_summary_ranges.py) | `Array` | Easy |
 | [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/232_implement_queue_using_stacks.py) | `Stack` `Design` `Queue` | Easy |
+| [253. Meeting Rooms II](https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0253.Meeting%20Rooms%20II/README_EN.md)| [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/253_meeting_rooms_II.py) | `Greedy` `Array` `Two Pointers` `Prefix Sum` `Sorting` `Heap (Priority Queue)` | Medium |
 | [281. Zigzag Iterator](https://github.com/doocs/leetcode/blob/main/solutions/solution/0200-0299/0281.Zigzag%20Iterator/README_EN.md)| [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/281_zigzag_iterator.py) | `Design` `Queue` `Array` `Iterator`| Medium |
 | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/283_move_zeroes.py) | `Array` `Two Pointers` | Easy |
 | [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/341_flatten_nested_list_iterator.py) | `Stack` `Tree` `Depth-First` `Search` `Design` `Queue` `Iterator` | Medium |
