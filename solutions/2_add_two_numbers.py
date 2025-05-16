@@ -22,10 +22,9 @@ def getNormalListFromHead(head) -> list[int]:
     curr = head
     if curr is None:
         return []
-    while curr.next is not None:
+    while curr:
         output.append(curr.val)
         curr = curr.next
-    output.append(curr.val)
     return output
 
 
@@ -34,11 +33,11 @@ class Solution:
         num = 0
         ll_len_counter = 0
         list_node = ll
-        while list_node.next:
+        while list_node:
             num += 10 ** ll_len_counter * list_node.val
             ll_len_counter += 1
             list_node = list_node.next
-        return num + 10 ** ll_len_counter * list_node.val
+        return num
 
     def getLinkedListFromNum(self, num: int) -> ListNode:
         num_str = str(num)
@@ -85,8 +84,8 @@ if __name__ == '__main__':
 
     l1 = createNodesList([2,4,3])
     l2 = createNodesList([5,6,4])
-    print(solution.getNumFromLinkedList(l1))
-    print(solution.getNumFromLinkedList(l2))
+    # print(solution.getNumFromLinkedList(l1))
+    # print(solution.getNumFromLinkedList(l2))
     print(getNormalListFromHead(solution.addTwoNumbers(l1, l2))) # [7,0,8]
 
     l1 = createNodesList([0])
