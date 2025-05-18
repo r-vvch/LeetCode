@@ -2,15 +2,32 @@ from typing import List
 
 
 class Solution:
-    def maxDistToClosest(self, seats: List[int]) -> int:
+    def maxDistToClosest(self, seats):
+        left_zeros = -1
+        right_zeros = -1
+        max_zeros = -1
+        zeros = 0
+        for seat in seats:
+            if seat == 0:
+                zeros += 1
+            else:
+                if left_zeros == -1:
+                    left_zeros = zeros
+                else:
+                    max_zeros = max(max_zeros, zeros)
+                zeros = 0
+        right_zeros = zeros
+        return max(left_zeros, right_zeros, (max_zeros + 1) // 2)
+
+    def maxDistToClosestLong(self, seats: List[int]) -> int:
         i = 0
 
         # max length of continuous zeros on the left
-        left_zeros_len = 0
+        left_zeros = 0
         while i < len(seats) and seats[i] == 0:
-            left_zeros_len += 1
+            left_zeros += 1
             i += 1
-        max_zeros_len = left_zeros_len
+        max_zeros = left_zeros
         i += 1
 
         # max length of continuous zeros in the middle
@@ -20,25 +37,20 @@ class Solution:
                 i = i_zero_start + 1
                 while i < len(seats) and seats[i] == 0:
                     i += 1
-                if i - i_zero_start > max_zeros_len:
-                    max_zeros_len = i - i_zero_start
+                max_zeros = max(max_zeros, i - i_zero_start)
             else:
                 i += 1
-        
+
         # max length of continuous zeros on the right
-        right_zeros_len = 0
+        right_zeros = 0
         if seats[-1] == 0:
-            right_zeros_len = i - i_zero_start
-        
-        if max_zeros_len in [left_zeros_len, right_zeros_len]:
-            return max_zeros_len
+            right_zeros = i - i_zero_start
+
+        if max_zeros in [left_zeros, right_zeros]:
+            return max_zeros
         else:
-            middle_zeros = 0
-            if max_zeros_len % 2 == 0:
-                middle_zeros = max_zeros_len // 2
-            else:
-                middle_zeros = max_zeros_len // 2 + 1
-            return max(left_zeros_len, right_zeros_len, middle_zeros)
+            middle_zeros = (max_zeros + 1) // 2
+            return max(left_zeros, right_zeros, middle_zeros)
 
 
 if __name__ == '__main__':
