@@ -3,24 +3,33 @@ import sys
 from pathlib import Path
 
 
-def get_problem_num(line: str):
+def get_problem_num(line: str) -> str:
     dot_pos = line.find('.')
     number = line[3:dot_pos]
     return number
 
 
-def add_to_readme(num: str, dif: str):
+def colored_diff_latex(line: str) -> str:
+    if line == 'Easy':
+        return '$\\color{1cb8b8}{\\textsf{Easy}}$'
+    elif line == 'Medium':
+        return '$\\color{ffb800}{\\textsf{Medium}}$'
+    elif line == 'Hard':
+        return '$\\color{f63636}{\\textsf{Hard}}$'
+
+
+def add_to_readme(num: str, dif: str) -> None:
     with open('README.md', 'r+', encoding='utf-8') as file:
         insert_string = f'| [{num}. ]() '
         if dif == 'e':
             insert_string += ('| [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/'
-                              + num + '_.py) ' + '| `` | Easy |\n')
+                              + num + '_.py) | `` | ' + colored_diff_latex('Easy') + '|\n')
         elif dif == 'm':
             insert_string += ('| [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/'
-                              + num + '_.py) ' + '| `` | Medium |\n')
+                              + num + '_.py) | `` | ' + colored_diff_latex('Medium') + '|\n')
         elif dif == 'h':
             insert_string += ('| [😤](https://github.com/r-vvch/LeetCode/blob/main/solutions/'
-                              + num + '_.py) ' + '| `` | Hard |\n')
+                              + num + '_.py) | `` | ' + colored_diff_latex('Hard') + '|\n')
 
         contents = file.readlines()
 
@@ -37,14 +46,14 @@ def add_to_readme(num: str, dif: str):
         file.writelines(contents)
 
 
-def add_py_file(num: str):
+def add_py_file(num: str) -> None:
     sol_path = os.path.join(os.path.dirname(__file__), 'solutions')
     if not os.path.exists(sol_path):
         Path(sol_path).mkdir(parents=True, exist_ok=True)
 
     py_file = os.path.join(sol_path, f'{num}_.py')
     with open(py_file, 'w') as f:
-        f.write('\n\nif __name__ == \'__main__\':\n    pass\n')
+        f.write('\n\n\nif __name__ == \'__main__\':\n    pass\n')
 
 
 if __name__ == '__main__':
