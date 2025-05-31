@@ -9,6 +9,15 @@ def get_problem_num(line: str) -> str:
     return number
 
 
+def colored_diff_html(line: str) -> str:
+    if line == 'Easy':
+        return '<span style="color:#1cb8b8">Easy</span>'
+    elif line == 'Medium':
+        return '<span style="color:#ffb800">Medium</span>'
+    elif line == 'Hard':
+        return '<span style="color:#f63636">Hard</span>'
+
+
 def colored_diff_latex(line: str) -> str:
     if line == 'Easy':
         return '$\\color{#1cb8b8}{\\textsf{Easy}}$'
@@ -16,7 +25,8 @@ def colored_diff_latex(line: str) -> str:
         return '$\\color{#ffb800}{\\textsf{Medium}}$'
     elif line == 'Hard':
         return '$\\color{#f63636}{\\textsf{Hard}}$'
-    
+
+
 def colored_diff_shields(line: str) -> str:
     if line == 'Easy':
         return '![Easy](https://img.shields.io/badge/Easy-1cb8b8)'
