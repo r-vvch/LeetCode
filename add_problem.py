@@ -11,12 +11,20 @@ def get_problem_num(line: str) -> str:
 
 def colored_diff_latex(line: str) -> str:
     if line == 'Easy':
-        return '$\\color{1cb8b8}{\\textsf{Easy}}$'
+        return '$\\color{#1cb8b8}{\\textsf{Easy}}$'
     elif line == 'Medium':
-        return '$\\color{ffb800}{\\textsf{Medium}}$'
+        return '$\\color{#ffb800}{\\textsf{Medium}}$'
     elif line == 'Hard':
-        return '$\\color{f63636}{\\textsf{Hard}}$'
-
+        return '$\\color{#f63636}{\\textsf{Hard}}$'
+    
+def colored_diff_shields(line: str) -> str:
+    if line == 'Easy':
+        return '![Easy](https://img.shields.io/badge/Easy-1cb8b8)'
+    elif line == 'Medium':
+        return '![Medium](https://img.shields.io/badge/Medium-ffb800)'
+    elif line == 'Hard':
+        return '![Hard](https://img.shields.io/badge/Hard-f63636)'
+    
 
 def add_to_readme(num: str, dif: str) -> None:
     with open('README.md', 'r+', encoding='utf-8') as file:
