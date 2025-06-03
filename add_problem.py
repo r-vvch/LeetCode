@@ -9,19 +9,31 @@ def get_problem_num(line: str):
     return number
 
 
+def default_font_diff(line: str) -> str:
+    return line
+
+
+def colored_diff_shields(line: str) -> str:
+    if line == 'Easy':
+        return '![](https://img.shields.io/badge/Easy-1cb8b8)'
+    elif line == 'Medium':
+        return '![](https://img.shields.io/badge/Medium-ffa800)'
+    elif line == 'Hard':
+        return '![](https://img.shields.io/badge/Hard-f63636)'
+
+
 def add_to_readme(num: str, dif: str):
     with open('README.md', 'r+', encoding='utf-8') as file:
         insert_string = f'| [{num}. ]() '
         if dif == 'e':
             insert_string += ('| [😎](https://github.com/r-vvch/LeetCode/blob/main/solutions/'
-                              + num + '_.py) ' + '| `` | Easy |\n')
+                              + num + '_.py) | `` | ' + colored_diff_shields('Easy') + '|\n')
         elif dif == 'm':
             insert_string += ('| [🤔](https://github.com/r-vvch/LeetCode/blob/main/solutions/'
-                              + num + '_.py) ' + '| `` | Medium |\n')
+                              + num + '_.py) | `` | ' + colored_diff_shields('Medium') + '|\n')
         elif dif == 'h':
             insert_string += ('| [😤](https://github.com/r-vvch/LeetCode/blob/main/solutions/'
-                              + num + '_.py) ' + '| `` | Hard |\n')
-
+                              + num + '_.py) | `` | ' + colored_diff_shields('Hard') + '|\n')
         contents = file.readlines()
 
         if int(num) > int(get_problem_num(contents[-1])):
