@@ -56,7 +56,8 @@ def add_py_file(num: str):
 
     py_file = os.path.join(sol_path, f'{num}_.py')
     with open(py_file, 'w') as f:
-        f.write('\n\nif __name__ == \'__main__\':\n    pass\n')
+        f.write('class Solution:\n    pass\n\n\n' +
+                'if __name__ == \'__main__\':\n    solution = Solution()\n\n')
 
 
 if __name__ == '__main__':
