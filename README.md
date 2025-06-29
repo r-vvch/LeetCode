@@ -82,4 +82,4 @@ LeetCode fuss [👀](https://leetcode.com/u/roman_vvch/)
 
 | Problem | Solution | Topics |
 | ------- | :------: | ------ |
-| [LeetCode SQL Tasks](https://leetcode.com/problemset/database/) | [🛢️](https://github.com/r-vvch/LeetCode/blob/main/solutions/SQL_tasks.sql) | `Database` |
+| [SQL Tasks](https://leetcode.com/problemset/database/) | [🛢️](https://github.com/r-vvch/LeetCode/blob/main/solutions/SQL_tasks.sql) | `Database` |

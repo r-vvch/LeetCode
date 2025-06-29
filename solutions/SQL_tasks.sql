@@ -94,3 +94,37 @@ FROM (
     INNER JOIN Department ON Employee.departmentId = Department.id
 ) AS sub
 WHERE sub.dense_rank <= 3;
+
+-- 196. Delete Duplicate Emails
+DELETE FROM person
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM Person
+    GROUP BY email
+);
+
+-- 197. Rising Temperature
+SELECT latter.id
+FROM Weather latter
+LEFT JOIN Weather former ON latter.recordDate::date - former.recordDate::date = 1
+WHERE latter.temperature > former.temperature;
+---- faster one:
+SELECT today.id 
+FROM Weather yesterday
+CROSS JOIN Weather today
+WHERE today.recorddate - yesterday.recorddate = 1
+    AND today.temperature > yesterday.temperature;
+
+-- 262. Trips and Users
+WITH not_banned as (
+    SELECT users_id FROM users
+    WHERE banned = 'No'
+) 
+SELECT request_at as Day,
+    ROUND(SUM(CASE WHEN status LIKE 'cancelled%' THEN 1.00 ELSE 0 END) / COUNT(*), 2)
+    AS "Cancellation Rate"
+FROM Trips
+WHERE client_id IN (SELECT users_id FROM not_banned)
+    AND driver_id IN (SELECT users_id FROM not_banned)
+    AND request_at BETWEEN '2013-10-01' AND '2013-10-03'
+GROUP BY request_at;
