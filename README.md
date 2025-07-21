@@ -80,6 +80,8 @@ LeetCode fuss [👀](https://leetcode.com/u/roman_vvch/)
 
 ### SQL
 
+Using PostgreSQL
+
 | Problem | Solution | Topics |
 | ------- | :------: | ------ |
 | [SQL Tasks](https://leetcode.com/problemset/database/) | [🛢️](https://github.com/r-vvch/LeetCode/blob/main/solutions/SQL_tasks.sql) | `Database` |
