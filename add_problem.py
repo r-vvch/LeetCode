@@ -25,12 +25,13 @@ def colored_diff_shields(line: str) -> str:
         return '![](https://img.shields.io/badge/Hard-f63636)'
 
 
-def add_to_readme(num: str):
+def add_problem(num: str):
+    # add to readme
     with open('problems_list.txt', 'r', encoding='utf-8') as file:
         problems = file.readlines()
         if int(num) > int(get_problem_num(problems[-3])):
             insert_string = (
-                f'| [{num}. ]() ' + 
+                f'| [{num}. ]() ' +
                 '| [](https://github.com/r-vvch/LeetCode/blob/main/solutions/' +
                 num + '_.py) | `` |  |\n')
         else:
@@ -40,11 +41,12 @@ def add_to_readme(num: str):
                     dot_pos = problem_name.find('.')
                     problem_name_no_num = problem_name[dot_pos + 2:]
                     problem_diff = problems[l_num + 2][:-1]
+                    py_file_name = problem_name.lower().replace(' ', '_').replace('.', '') + '.py'
                     insert_string = (
                         f'| [{problem_name}](https://leetcode.com/problems/' +
                         f'{problem_name_no_num.lower().replace(' ', '-')}/) ' +
                         '| [](https://github.com/r-vvch/LeetCode/blob/main/solutions/' +
-                        problem_name.lower().replace(' ', '_').replace('.', '') + '.py) ' +
+                        py_file_name + ') ' +
                         '| `` ' +
                         '| ' + colored_diff_shields(problem_diff) + ' '
                         '|\n')
@@ -52,8 +54,8 @@ def add_to_readme(num: str):
 
     with open('README.md', 'r+', encoding='utf-8') as file:
         contents = file.readlines()
-        contents_alg = contents[:-6]
-        contents_sql = contents[-6:]
+        contents_alg = contents[:-8]
+        contents_sql = contents[-8:]
         if int(num) > int(get_problem_num(contents_alg[-1])):
             contents_alg.append(insert_string)
         else:
@@ -67,20 +69,16 @@ def add_to_readme(num: str):
         full_contents = contents_alg + contents_sql
         file.writelines(full_contents)
 
-
-def add_py_file(num: str):
+    # add .py file
     sol_path = os.path.join(os.path.dirname(__file__), 'solutions')
     if not os.path.exists(sol_path):
         Path(sol_path).mkdir(parents=True, exist_ok=True)
 
-    py_file = os.path.join(sol_path, f'{num}_.py')
+    py_file = os.path.join(sol_path, py_file_name)
     with open(py_file, 'w') as f:
         f.write('class Solution:\n    pass\n\n\n' +
                 'if __name__ == \'__main__\':\n    solution = Solution()\n\n')
 
 
 if __name__ == '__main__':
-    problem_num = sys.argv[1]
-
-    add_to_readme(problem_num)
-    add_py_file(problem_num)
+    add_problem(sys.argv[1])
