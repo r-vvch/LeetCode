@@ -25,6 +25,15 @@ def colored_diff_shields(line: str) -> str:
         return '![](https://img.shields.io/badge/Hard-f63636)'
 
 
+def diff_emoji(line: str) -> str:
+        if line == 'Easy':
+            return '😎'
+        elif line == 'Med.':
+            return '🤔'
+        elif line == 'Hard':
+            return '😤'
+
+
 def add_problem(num: str):
     # add to readme
     with open('problems_list.txt', 'r', encoding='utf-8') as file:
@@ -45,7 +54,8 @@ def add_problem(num: str):
                     insert_string = (
                         f'| [{problem_name}](https://leetcode.com/problems/' +
                         f'{problem_name_no_num.lower().replace(' ', '-')}/) ' +
-                        '| [](https://github.com/r-vvch/LeetCode/blob/main/solutions/' +
+                        f'| [{diff_emoji(problem_diff)}]' +
+                        '(https://github.com/r-vvch/LeetCode/blob/main/solutions/' +
                         py_file_name + ') ' +
                         '| `` ' +
                         '| ' + colored_diff_shields(problem_diff) + ' '
