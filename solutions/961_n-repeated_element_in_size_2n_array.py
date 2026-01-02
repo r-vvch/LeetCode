@@ -23,7 +23,7 @@ class SolutionO1:
 
 
 if __name__ == '__main__':
-    solution = Solution()
+    solution = SolutionO1()
 
     nums = [1,2,3,3]
     print(solution.repeatedNTimes(nums)) # 3
